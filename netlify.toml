@@ -1,0 +1,63 @@
+# ============================================
+# Netlify Configuration
+# ============================================
+
+[build]
+  publish = "."
+
+# Pretty URLs — /gizlilik-politikasi yazınca .html'e yönlendir
+[[redirects]]
+  from = "/gizlilik-politikasi"
+  to = "/gizlilik-politikasi.html"
+  status = 200
+
+[[redirects]]
+  from = "/kullanim-kosullari"
+  to = "/kullanim-kosullari.html"
+  status = 200
+
+[[redirects]]
+  from = "/iade-politikasi"
+  to = "/iade-politikasi.html"
+  status = 200
+
+[[redirects]]
+  from = "/mesafeli-satis-sozlesmesi"
+  to = "/mesafeli-satis-sozlesmesi.html"
+  status = 200
+
+# ============================================
+# Security Headers
+# ============================================
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# ============================================
+# Caching
+# ============================================
+
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dermaslim Transdermal Bant - Doğal bitki özleriyle zayıflama yolculuğunuza destek. Türkiye'nin her yerine ücretsiz kargo, kapıda ödeme.">
+    <meta name="theme-color" content="#2D5F3F">
+    <title>Dermaslim · Doğal Transdermal Bant · Kapıda Ödeme</title>
+
+    <!-- Fonts: Fraunces (serif) + Inter (sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- ============================================
+         DUYURU ŞERİDİ
+         ============================================ -->
+    <div class="announcement">
+        <div class="announcement-items">
+            <span>Türkiye geneli ücretsiz kargo</span>
+            <span>Kapıda ödeme</span>
+            <span>14 gün iade garantisi</span>
+        </div>
+    </div>
+
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="/" class="brand">
+                    DERMASLİM
+                    <small>Doğal Transdermal Bant</small>
+                </a>
+
+                <nav class="nav-desktop" aria-label="Ana menü">
+                    <a href="#urun">Ürün</a>
+                    <a href="#icerik">İçerikler</a>
+                    <a href="#kullanim">Kullanım</a>
+                    <a href="#yorumlar">Yorumlar</a>
+                    <a href="#siparis">Fiyatlar</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="icon-btn" onclick="toggleCart()" aria-label="Sepeti aç">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <path d="M16 10a4 4 0 0 1-8 0"/>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+
+                    <button class="icon-btn menu-toggle" onclick="toggleMenu()" aria-label="Menüyü aç">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                            <line x1="3" y1="7" x2="21" y2="7"/>
+                            <line x1="3" y1="12" x2="21" y2="12"/>
+                            <line x1="3" y1="17" x2="21" y2="17"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobil menü -->
+    <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+    <aside class="menu-drawer" id="menuDrawer" aria-hidden="true">
+        <div class="menu-drawer-header">
+            <h3>Menü</h3>
+            <button class="icon-btn" onclick="toggleMenu()" aria-label="Menüyü kapat">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                    <line x1="6" y1="18" x2="18" y2="6"/>
+                </svg>
+            </button>
+        </div>
+        <nav>
+            <a href="#urun" onclick="toggleMenu()">Ürün</a>
+            <a href="#icerik" onclick="toggleMenu()">İçerikler</a>
+            <a href="#kullanim" onclick="toggleMenu()">Kullanım</a>
+            <a href="#yorumlar" onclick="toggleMenu()">Yorumlar</a>
+            <a href="#sss" onclick="toggleMenu()">Sıkça sorulanlar</a>
+            <a href="#siparis" onclick="toggleMenu()" class="primary">Sipariş ver</a>
+        </nav>
+    </aside>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <span class="eyebrow">Transdermal Bant · 30 Adet</span>
+
+                    <h1 class="hero-title">
+                        Doğal bitki özleriyle<br>
+                        <span class="accent">incelme yolculuğuna</span> destek.
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Geleneksel bitkisel özlerin modern transdermal teknoloji ile buluştuğu günlük destek ürünü. Diyetinize ve yaşam tarzınıza eşlik eder.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#siparis" class="btn btn-primary btn-large btn-arrow">Hemen sipariş ver</a>
+                        <a href="#urun" class="btn btn-ghost btn-large">Ürünü tanı</a>
+                    </div>
+
+                    <p class="hero-note">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L3 7v6c0 5 4 9 9 10 5-1 9-5 9-10V7l-9-5z"/>
+                        </svg>
+                        Güvenli ödeme · 14 gün iade hakkı
+                    </p>
+                </div>
+
+                <div class="hero-image-wrap">
+                    <span class="hero-image-badge">Aylık Program</span>
+                    <img src="assets/images/product-box.jpg" alt="Dermaslim transdermal bant kutusu" loading="eager">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TRUST ROW
+         ============================================ -->
+    <div class="trust-row">
+        <div class="container">
+            <div class="trust-inner">
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="1" y="3" width="15" height="13"/>
+                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                        <circle cx="5.5" cy="18.5" r="2.5"/>
+                        <circle cx="18.5" cy="18.5" r="2.5"/>
+                    </svg>
+                    <h4>Ücretsiz kargo</h4>
+                    <p>Türkiye geneli</p>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="1" y="4" width="22" height="16" rx="0"/>
+                        <line x1="1" y1="10" x2="23" y2="10"/>
+                    </svg>
+                    <h4>Kapıda ödeme</h4>
+                    <p>Nakit veya kart</p>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                        <path d="M21 3v5h-5"/>
+                        <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                        <path d="M3 21v-5h5"/>
+                    </svg>
+                    <h4>14 gün iade</h4>
+                    <p>Koşulsuz garanti</p>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    <h4>Müşteri desteği</h4>
+                    <p>Pzt-Cmt · 09-18</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         PRODUCT DETAILS GRID
+         ============================================ -->
+    <section class="section" id="urun">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Ürün bilgisi</span>
+                <h2>Kutuda ne var, nasıl kullanılır?</h2>
+                <p>30 adet bant, bir aylık günlük kullanım için tasarlandı.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>Kutu içeriği</h3>
+                    <p class="info-value">30 adet bant</p>
+                    <p>Her bant tek kullanımlık, hijyenik ambalajda gelir.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Kullanım süresi</h3>
+                    <p class="info-value">1 aylık program</p>
+                    <p>Günde 1 bant kullanımı ile tam 30 gün yeterli.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3>Uygulama bölgesi</h3>
+                    <p class="info-value">Karın, kol, bacak</p>
+                    <p>Temiz ve kuru cilde kolayca yapışır.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Saklama</h3>
+                    <p class="info-value">Oda sıcaklığı</p>
+                    <p>Serin, kuru yerde ve direkt güneş ışığından uzak.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="0"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3>Raf ömrü</h3>
+                    <p class="info-value">24 ay</p>
+                    <p>Üretim tarihinden itibaren 2 yıl.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Üretim</h3>
+                    <p class="info-value">GMP tesisinde</p>
+                    <p>Uluslararası kalite standartlarında üretilir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         NASIL ETKİ EDER (split section)
+         ============================================ -->
+    <section class="section split">
+        <div class="container">
+            <div class="split-inner">
+                <div class="split-image">
+                    <img src="assets/images/product-usage.jpg" alt="Dermaslim bandın cilde uygulanışı" loading="lazy">
+                </div>
+                <div class="split-text">
+                    <span class="eyebrow">Nasıl çalışır</span>
+                    <h2>Transdermal teknoloji ile günlük bitkisel destek</h2>
+                    <p class="lead">Dermaslim bantları, özel formülasyonu sayesinde bitkisel aktif bileşenleri cildiniz yoluyla ulaştırmak için tasarlandı.</p>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="4"/>
+                                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Transdermal emilim</h4>
+                                <p>Aktif bileşenler bandın yapıştığı bölgeden cilde iletilir.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3"/>
+                                    <line x1="6" y1="21" x2="18" y2="21"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Doğal bitkisel özler</h4>
+                                <p>Yeşil çay, zencefil, gymnema gibi geleneksel bitki özlerini içerir.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Günlük ve pratik</h4>
+                                <p>8-12 saat cildinize yapışır, normal gününüze devam edersiniz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         İÇERİKLER
+         ============================================ -->
+    <section class="section" id="icerik">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">İçerikler</span>
+                <h2>Geleneksel bitki özleri</h2>
+                <p>Dermaslim formülasyonu, yüzyıllardır bitkisel tıpta kullanılan doğal özleri içerir.</p>
+            </div>
+
+            <div class="ingredients-grid">
+                <div class="ingredient">
+                    <div class="ingredient-header">
+                        <span class="ingredient-icon">I</span>
+                        <h3>Yeşil Çay Ekstresi<small>Camellia sinensis</small></h3>
+                    </div>
+                    <ul class="ingredient-benefits">
+                        <li>Antioksidan bakımından zengindir</li>
+                        <li>Geleneksel olarak metabolizma desteğinde kullanılır</li>
+                        <li>Doğal katekin içerir</li>
+                    </ul>
+                </div>
+
+                <div class="ingredient">
+                    <div class="ingredient-header">
+                        <span class="ingredient-icon">II</span>
+                        <h3>Zencefil Kökü<small>Zingiber officinale</small></h3>
+                    </div>
+                    <ul class="ingredient-benefits">
+                        <li>Geleneksel olarak sindirim desteğinde kullanılır</li>
+                        <li>Termojenik özellikleriyle bilinir</li>
+                        <li>Antienflamatuar özellikler taşır</li>
+                    </ul>
+                </div>
+
+                <div class="ingredient">
+                    <div class="ingredient-header">
+                        <span class="ingredient-icon">III</span>
+                        <h3>Gymnema Yaprağı<small>Gymnema sylvestre</small></h3>
+                    </div>
+                    <ul class="ingredient-benefits">
+                        <li>Ayurvedik tıpta uzun bir geçmişe sahiptir</li>
+                        <li>Geleneksel olarak şeker isteğine karşı kullanılır</li>
+                        <li>Jimnemik asit içerir</li>
+                    </ul>
+                </div>
+
+                <div class="ingredient">
+                    <div class="ingredient-header">
+                        <span class="ingredient-icon">IV</span>
+                        <h3>Garsinya Kambogya<small>Garcinia cambogia</small></h3>
+                    </div>
+                    <ul class="ingredient-benefits">
+                        <li>Hidroksisitrik asit (HCA) içerir</li>
+                        <li>Geleneksel olarak iştah yönetiminde kullanılır</li>
+                        <li>Güneydoğu Asya kökenli bitki</li>
+                    </ul>
+                </div>
+
+                <div class="ingredient">
+                    <div class="ingredient-header">
+                        <span class="ingredient-icon">V</span>
+                        <h3>Acı Portakal<small>Citrus aurantium</small></h3>
+                    </div>
+                    <ul class="ingredient-benefits">
+                        <li>Doğal sinefrin içerir</li>
+                        <li>Geleneksel olarak enerji desteğinde kullanılır</li>
+                        <li>Termojenik bitki olarak bilinir</li>
+                    </ul>
+                </div>
+
+                <div class="ingredient">
+                    <div class="ingredient-header">
+                        <span class="ingredient-icon">VI</span>
+                        <h3>Karahindiba<small>Taraxacum officinale</small></h3>
+                    </div>
+                    <ul class="ingredient-benefits">
+                        <li>Geleneksel diüretik olarak kullanılır</li>
+                        <li>Vücuttan fazla suyun atılmasında desteklediği düşünülür</li>
+                        <li>Yüzyıllardır bitkisel tıpta yer alır</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ingredients-note">
+                <strong>Doğal ve takviye niteliğinde:</strong> Dermaslim bir takviye üründür; ilaç değildir. Hastalıkların teşhisi, tedavisi veya önlenmesi amacıyla kullanılamaz. Sonuçlar bireyden bireye değişir. Dengeli beslenme ve aktif yaşam tarzı ile birlikte kullanılması tavsiye edilir.
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         NASIL KULLANILIR
+         ============================================ -->
+    <section class="section split" id="kullanim">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Kullanım</span>
+                <h2>Üç basit adımda</h2>
+                <p>Günlük rutininize birkaç saniyede entegre olur.</p>
+            </div>
+
+            <div class="steps-grid">
+                <article class="step">
+                    <span class="step-number">I</span>
+                    <h3>Temiz cilt</h3>
+                    <p>Uygulama bölgesini (karın, kol veya bacak) temizleyin ve iyice kurulayın.</p>
+                </article>
+                <article class="step">
+                    <span class="step-number">II</span>
+                    <h3>Bandı yapıştırın</h3>
+                    <p>Koruyucu filmi çıkarın, bandı cildinize sıkıca yapıştırın. Hava kabarcığı bırakmayın.</p>
+                </article>
+                <article class="step">
+                    <span class="step-number">III</span>
+                    <h3>8-12 saat bekletin</h3>
+                    <p>Bandı 8-12 saat cildinizde tutun. Normal aktivitelerinize devam edebilirsiniz.</p>
+                </article>
+            </div>
+
+            <div class="usage-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.97-1.36 4.3-2.72 5.64A5 5 0 0 0 15 18H9a5 5 0 0 0-1.28-3.36C6.36 13.3 5 11.97 5 9a7 7 0 0 1 7-7z"/>
+                </svg>
+                <p><strong>Tavsiye:</strong> En iyi sonuç için akşam duşundan sonra uygulayın ve sabah çıkarın. Uyku sürecinde maksimum temas sağlanır.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         YORUMLAR
+         ============================================ -->
+    <section class="section testimonials" id="yorumlar">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Müşteri yorumları</span>
+                <h2>Gerçek insanlar, gerçek deneyimler</h2>
+                <p>Dermaslim kullanan müşterilerimizden seçilmiş yorumlar.</p>
+            </div>
+
+            <div class="testimonials-scroll" id="testimonialsCarousel">
+                <article class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-verified">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Doğrulanmış alışveriş
+                    </div>
+                    <p class="testimonial-text">"Üç hafta kullandım, kendimi daha hafif hissediyorum. Arkadaşlarım farkı hemen fark etti. Uygulaması çok pratik, günlük işlerimi aksatmıyor."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <h4>Ayşe Y.</h4>
+                            <p>İstanbul · 3 hafta</p>
+                        </div>
+                        <div class="testimonial-result">
+                            <span>Deneyim</span>
+                            <strong>−7 kg</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-verified">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Doğrulanmış alışveriş
+                    </div>
+                    <p class="testimonial-text">"Bitki özleri olduğu için denemeye karar verdim. İki kutu bitti, üçüncüyü sipariş verdim. Cildime uymadığı bir gün olmadı, çok iyi yapıştı."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">Z</div>
+                        <div>
+                            <h4>Zeynep K.</h4>
+                            <p>Ankara · 2 ay</p>
+                        </div>
+                        <div class="testimonial-result">
+                            <span>Deneyim</span>
+                            <strong>−5 kg</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-verified">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Doğrulanmış alışveriş
+                    </div>
+                    <p class="testimonial-text">"Kapıda ödeme olduğu için güvenerek sipariş ettim. Kargo hızlıydı. Paketleme şık, ürün kokusu hafif bitkisel. Beni rahatsız etmiyor."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <h4>Merve D.</h4>
+                            <p>İzmir · 1 ay</p>
+                        </div>
+                        <div class="testimonial-result">
+                            <span>Deneyim</span>
+                            <strong>−4 kg</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-verified">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Doğrulanmış alışveriş
+                    </div>
+                    <p class="testimonial-text">"40 yaşından sonra metabolizmam yavaşlamıştı. Dermaslim ile birlikte yürüyüşü birleştirdim, altı haftada ciddi farkı hissettim. Teşekkürler."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">E</div>
+                        <div>
+                            <h4>Esra P.</h4>
+                            <p>Bursa · 6 hafta</p>
+                        </div>
+                        <div class="testimonial-result">
+                            <span>Deneyim</span>
+                            <strong>−8 kg</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-verified">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Doğrulanmış alışveriş
+                    </div>
+                    <p class="testimonial-text">"Başta biraz şüpheciydim ama ürün beklediğimden iyi çıktı. Ambalaj kaliteli, kullanımı kolay. İki aydır kullanıyorum, memnunum."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <h4>Selin B.</h4>
+                            <p>Adana · 2 ay</p>
+                        </div>
+                        <div class="testimonial-result">
+                            <span>Deneyim</span>
+                            <strong>−6 kg</strong>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <p class="testimonials-hint">← Kaydırarak diğer yorumları görebilirsiniz →</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FİYATLAR + SİPARİŞ
+         ============================================ -->
+    <section class="section" id="siparis">
+        <div class="container">
+            <div class="countdown">
+                <div class="container">
+                    <div class="countdown-inner">
+                        <div class="countdown-text">
+                            <h3>Ay sonu kampanyası</h3>
+                            <p>Stoklarla sınırlı · ücretsiz kargo dahil</p>
+                        </div>
+                        <div class="countdown-timer" id="countdownTimer">
+                            <div class="countdown-box">
+                                <span class="countdown-box-value" id="cdDays">00</span>
+                                <span class="countdown-box-label">Gün</span>
+                            </div>
+                            <div class="countdown-box">
+                                <span class="countdown-box-value" id="cdHours">00</span>
+                                <span class="countdown-box-label">Saat</span>
+                            </div>
+                            <div class="countdown-box">
+                                <span class="countdown-box-value" id="cdMinutes">00</span>
+                                <span class="countdown-box-label">Dakika</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <span class="eyebrow">Paketler</span>
+                <h2>Kampanyalı paketler</h2>
+                <p>Birden fazla kutu alımında kutu başı fiyat düşer.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <span class="pricing-name">Başlangıç</span>
+                    <h3 class="pricing-title">1 Aylık Paket</h3>
+                    <span class="pricing-quantity">1 Kutu · 30 Bant</span>
+                    <div class="pricing-price">
+                        <div class="pricing-old">₺1.200</div>
+                        <div class="pricing-current"><span class="currency">₺</span>789</div>
+                        <div class="pricing-per">Kutu başı ₺789</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>30 adet transdermal bant</li>
+                        <li>Türkiye geneli ücretsiz kargo</li>
+                        <li>Kapıda nakit veya kart ödeme</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block" onclick="addToCart('1 Kutu (Başlangıç)', 789, 1)">
+                        Sepete ekle
+                    </button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <span class="pricing-badge">En çok tercih edilen</span>
+                    <span class="pricing-name">Avantajlı</span>
+                    <h3 class="pricing-title">2 Aylık Paket</h3>
+                    <span class="pricing-quantity">2 Kutu · 60 Bant</span>
+                    <div class="pricing-price">
+                        <div class="pricing-old">₺2.400</div>
+                        <div class="pricing-current"><span class="currency">₺</span>1.370</div>
+                        <div class="pricing-per">Kutu başı ₺685</div>
+                        <span class="pricing-save">₺1.030 tasarruf</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>60 adet transdermal bant</li>
+                        <li>Türkiye geneli ücretsiz kargo</li>
+                        <li>Kapıda nakit veya kart ödeme</li>
+                        <li>Hediye ambalaj</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block" onclick="addToCart('2 Kutu (Avantajlı)', 1370, 2)">
+                        Sepete ekle
+                    </button>
+                </div>
+
+                <div class="pricing-card">
+                    <span class="pricing-name">Süper fırsat</span>
+                    <h3 class="pricing-title">3 Aylık Paket</h3>
+                    <span class="pricing-quantity">3 Kutu · 90 Bant</span>
+                    <div class="pricing-price">
+                        <div class="pricing-old">₺3.600</div>
+                        <div class="pricing-current"><span class="currency">₺</span>2.050</div>
+                        <div class="pricing-per">Kutu başı ₺683</div>
+                        <span class="pricing-save">₺1.550 tasarruf</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>90 adet transdermal bant</li>
+                        <li>Türkiye geneli ücretsiz kargo</li>
+                        <li>Kapıda nakit veya kart ödeme</li>
+                        <li>Hediye ambalaj</li>
+                        <li>Öncelikli müşteri desteği</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block" onclick="addToCart('3 Kutu (Süper Fırsat)', 2050, 3)">
+                        Sepete ekle
+                    </button>
+                </div>
+            </div>
+
+            <div class="guarantee">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <div>
+                    <h4>14 gün koşulsuz iade garantisi</h4>
+                    <p>Ürünü beğenmezseniz 14 gün içinde iade edebilirsiniz. İade kargo ücreti tarafımızdan karşılanır.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SİPARİŞ FORMU
+         ============================================ -->
+    <section class="section order-section" id="siparis-formu">
+        <div class="container">
+            <div class="order-wrap">
+                <div class="order-header">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="1" y="3" width="15" height="13"/>
+                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                        <circle cx="5.5" cy="18.5" r="2.5"/>
+                        <circle cx="18.5" cy="18.5" r="2.5"/>
+                    </svg>
+                    <h2>Kapıda ödeme ile sipariş</h2>
+                    <p>Ürün elinize ulaştığında ödeme yaparsınız.</p>
+                </div>
+
+                <form id="orderForm" name="siparis" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return handleSubmit(event)">
+                    <!-- Netlify -->
+                    <input type="hidden" name="form-name" value="siparis" />
+                    <p style="display:none;"><label>Bot-field: <input name="bot-field" /></label></p>
+
+                    <input type="hidden" id="hiddenCartData" name="sepet_icerigi" value="">
+                    <input type="hidden" id="hiddenTotalData" name="toplam_tutar" value="">
+
+                    <div class="order-summary" id="orderSummaryBox" style="display:none;">
+                        <h3>Sipariş özeti</h3>
+                        <div id="orderSummaryItems"></div>
+                        <div class="order-summary-total">
+                            <span class="label">Toplam</span>
+                            <span class="value" id="orderTotal">₺0</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="fullname">Ad Soyad <span class="required">*</span></label>
+                        <input type="text" id="fullname" name="ad_soyad" class="form-control" required placeholder="Adınız ve soyadınız">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="phone">Telefon Numarası <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="telefon" class="form-control" required placeholder="05XX XXX XX XX" pattern="[0-9\s]{10,13}">
+                    </div>
+
+                    <div class="form-group two-col">
+                        <div>
+                            <label class="form-label" for="city">İl <span class="required">*</span></label>
+                            <select id="city" name="il" class="form-control" required>
+                                <option value="">Seçiniz</option>
+                                <option>Adana</option><option>Adıyaman</option><option>Afyonkarahisar</option>
+                                <option>Ağrı</option><option>Aksaray</option><option>Amasya</option>
+                                <option>Ankara</option><option>Antalya</option><option>Ardahan</option>
+                                <option>Artvin</option><option>Aydın</option><option>Balıkesir</option>
+                                <option>Bartın</option><option>Batman</option><option>Bayburt</option>
+                                <option>Bilecik</option><option>Bingöl</option><option>Bitlis</option>
+                                <option>Bolu</option><option>Burdur</option><option>Bursa</option>
+                                <option>Çanakkale</option><option>Çankırı</option><option>Çorum</option>
+                                <option>Denizli</option><option>Diyarbakır</option><option>Düzce</option>
+                                <option>Edirne</option><option>Elazığ</option><option>Erzincan</option>
+                                <option>Erzurum</option><option>Eskişehir</option><option>Gaziantep</option>
+                                <option>Giresun</option><option>Gümüşhane</option><option>Hakkari</option>
+                                <option>Hatay</option><option>Iğdır</option><option>Isparta</option>
+                                <option>İstanbul</option><option>İzmir</option><option>Kahramanmaraş</option>
+                                <option>Karabük</option><option>Karaman</option><option>Kars</option>
+                                <option>Kastamonu</option><option>Kayseri</option><option>Kilis</option>
+                                <option>Kırıkkale</option><option>Kırklareli</option><option>Kırşehir</option>
+                                <option>Kocaeli</option><option>Konya</option><option>Kütahya</option>
+                                <option>Malatya</option><option>Manisa</option><option>Mardin</option>
+                                <option>Mersin</option><option>Muğla</option><option>Muş</option>
+                                <option>Nevşehir</option><option>Niğde</option><option>Ordu</option>
+                                <option>Osmaniye</option><option>Rize</option><option>Sakarya</option>
+                                <option>Samsun</option><option>Siirt</option><option>Sinop</option>
+                                <option>Sivas</option><option>Şanlıurfa</option><option>Şırnak</option>
+                                <option>Tekirdağ</option><option>Tokat</option><option>Trabzon</option>
+                                <option>Tunceli</option><option>Uşak</option><option>Van</option>
+                                <option>Yalova</option><option>Yozgat</option><option>Zonguldak</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="form-label" for="district">İlçe <span class="required">*</span></label>
+                            <input type="text" id="district" name="ilce" class="form-control" required placeholder="İlçe">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="address">Açık Adres <span class="required">*</span></label>
+                        <textarea id="address" name="adres" class="form-control" required placeholder="Mahalle, sokak, bina no, daire no"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="notes">Sipariş Notu (Opsiyonel)</label>
+                        <textarea id="notes" name="siparis_notu" class="form-control" placeholder="Varsa özel taleplerinizi yazınız"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Ödeme Yöntemi <span class="required">*</span></label>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="odeme_sekli" value="Kapıda Nakit" required checked>
+                                <span class="payment-radio"></span>
+                                <span class="payment-option-content">
+                                    <strong>Kapıda nakit</strong>
+                                    <span>Kargoya nakit ödeyin</span>
+                                </span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="odeme_sekli" value="Kapıda Kart">
+                                <span class="payment-radio"></span>
+                                <span class="payment-option-content">
+                                    <strong>Kapıda kart</strong>
+                                    <span>Kargoya kart ile ödeyin</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-consent">
+                        <label>
+                            <input type="checkbox" required>
+                            <span>
+                                <a href="mesafeli-satis-sozlesmesi.html" target="_blank">Mesafeli Satış Sözleşmesi</a>ni,
+                                <a href="gizlilik-politikasi.html" target="_blank">Gizlilik Politikası</a>nı ve
+                                <a href="iade-politikasi.html" target="_blank">İade Politikası</a>nı okudum, anladım ve kabul ediyorum.
+                            </span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large btn-block btn-arrow">
+                        Siparişi tamamla
+                    </button>
+
+                    <div class="form-security">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="1"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                        Bilgileriniz SSL ile korunmaktadır. Sipariş onayı için telefonla aranacaksınız.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SSS
+         ============================================ -->
+    <section class="section" id="sss">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Sıkça sorulanlar</span>
+                <h2>Merak ettikleriniz</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Dermaslim nasıl bir ürün?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Dermaslim, cilde yapıştırılan ve içinde bitkisel aktif bileşenler barındıran bir transdermal bant ürünüdür. Takviye niteliğindedir ve ilaç değildir. Bireysel deneyimler kişiden kişiye farklılık gösterebilir.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Diyet yapmam veya spor yapmam gerekiyor mu?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Zorunlu değildir; ancak dengeli beslenme ve düzenli fiziksel aktivitenin, herhangi bir kilo yönetimi programında en belirleyici etkenler olduğunu biliyoruz. Dermaslim, bu süreçte bir destek ürünü olarak konumlanır.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Yan etkileri var mı?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Tüm içerikler bitkisel kaynaklıdır. Bazı bireylerde ciltte hassasiyet görülebilir. Herhangi bir alerjiniz veya sağlık sorununuz varsa kullanmadan önce mutlaka doktorunuza danışın. Hamilelik ve emzirme döneminde kullanılması tavsiye edilmez.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Kaç kilo verebilirim?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Kilo verme süreci kişisel metabolizma, yaşam tarzı, beslenme alışkanlıkları ve fiziksel aktivite düzeyi gibi birçok faktöre bağlıdır. Hiçbir ürün sabit bir sonuç garanti edemez. Dermaslim'i dengeli yaşam tarzıyla birlikte kullanan kullanıcılarımızın olumlu geri bildirimleri mevcuttur.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Kargo ücretli mi?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Hayır. Türkiye'nin tüm illerine ücretsiz kargo gönderim yapılır. Siparişler onaylandıktan sonra ortalama 2-3 iş günü içinde adresinize teslim edilir.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Kapıda ödeme nasıl çalışıyor?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Siparişi verdiğinizde ön ödeme alınmaz. Ürün adresinize ulaştığında kargo görevlisine nakit veya kredi kartı ile ödeme yapabilirsiniz.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        İade koşullarınız nelerdir?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Ürünü teslim aldığınız tarihten itibaren 14 gün içinde, ambalajı açılmamış ve kullanılmamış ürünleri iade edebilirsiniz. <a href="iade-politikasi.html" style="color: var(--color-primary); text-decoration: underline;">Detaylı iade politikamızı buradan</a> inceleyebilirsiniz.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>DERMASLİM</h3>
+                    <p>Doğal bitki özleriyle zayıflama yolculuğunuza destek olan transdermal bant ürünü.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="javascript:void(0)" onclick="contactWhatsApp()" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5s-.7-1.7-.9-2.3c-.2-.6-.5-.5-.7-.5-.2 0-.4 0-.6 0s-.5.1-.8.4c-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3c1.5.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Ürün</h4>
+                    <ul>
+                        <li><a href="#urun">Ürün bilgisi</a></li>
+                        <li><a href="#icerik">İçerikler</a></li>
+                        <li><a href="#kullanim">Nasıl kullanılır</a></li>
+                        <li><a href="#yorumlar">Yorumlar</a></li>
+                        <li><a href="#siparis">Fiyatlar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Yasal</h4>
+                    <ul>
+                        <li><a href="gizlilik-politikasi.html">Gizlilik politikası</a></li>
+                        <li><a href="kullanim-kosullari.html">Kullanım koşulları</a></li>
+                        <li><a href="mesafeli-satis-sozlesmesi.html">Mesafeli satış sözleşmesi</a></li>
+                        <li><a href="iade-politikasi.html">İade politikası</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li>Telefon: 0533 609 54 51</li>
+                        <li>E-posta: <a href="mailto:Dermaslim1@gmail.com">Dermaslim1@gmail.com</a></li>
+                        <li>Pzt-Cmt · 09:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="disclaimer">
+                    <strong>Yasal uyarı:</strong> Dermaslim bir takviye üründür; ilaç değildir. Hastalıkların teşhisi, tedavisi veya önlenmesi amacıyla kullanılamaz. Bireysel sonuçlar kişiden kişiye farklılık gösterir. Dengeli beslenme ve düzenli yaşam tarzı ile birlikte kullanılması tavsiye edilir. Hamilelik, emzirme dönemi veya mevcut bir sağlık sorununuz varsa kullanmadan önce doktorunuza danışın.
+                </p>
+                <p>© 2025 Dermaslim. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         STICKY MOBILE CTA
+         ============================================ -->
+    <div class="sticky-cta">
+        <a href="#siparis" class="btn btn-primary btn-block btn-arrow">Sipariş ver · Kapıda ödeme</a>
+    </div>
+
+    <!-- WhatsApp floating -->
+    <a href="javascript:void(0)" onclick="contactWhatsApp()" class="whatsapp-fab" aria-label="WhatsApp ile iletişim">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5s-.7-1.7-.9-2.3c-.2-.6-.5-.5-.7-.5-.2 0-.4 0-.6 0s-.5.1-.8.4c-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3c1.5.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/>
+        </svg>
+    </a>
+
+    <!-- ============================================
+         CART DRAWER
+         ============================================ -->
+    <div class="menu-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Sepetim</h3>
+            <button class="icon-btn" onclick="toggleCart()" aria-label="Sepeti kapat">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                    <line x1="6" y1="18" x2="18" y2="6"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="cart-body" id="cartBody">
+            <div class="cart-empty">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+                <p>Sepetiniz boş</p>
+                <small>Fiyatlar bölümünden paket seçin.</small>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span class="cart-total-label">Toplam</span>
+                <span class="cart-total-value" id="cartTotal">₺0</span>
+            </div>
+            <button class="btn btn-primary btn-block btn-large btn-arrow" onclick="proceedToCheckout()" id="checkoutBtn" disabled>
+                Siparişi tamamla
+            </button>
+        </div>
+    </aside>
+
+    <!-- ============================================
+         SUCCESS MODAL
+         ============================================ -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+            </div>
+            <h3>Siparişiniz alındı</h3>
+            <p id="successMessage">Teşekkür ederiz. Müşteri temsilcimiz kısa süre içinde sizi arayarak siparişinizi onaylayacaktır.</p>
+            <button class="btn btn-primary btn-block" onclick="closeSuccessModal()">Tamam</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
