@@ -2,7 +2,7 @@
 
 > Türkçe doğal takviye ürünü için tasarlanmış statik e-ticaret sitesi. Vanilla HTML/CSS/JS ile, Netlify Forms entegrasyonlu, mobile-first.
 
-**Canlı:** [dermaslim.com.tr](https://dermaslim.com.tr) (Netlify üzerinde)
+**Canlı:** [dermaslim.com.tr](dermaslimbant.com.tr) (Netlify üzerinde)
 
 ---
 
